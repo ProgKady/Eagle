@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="445.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CordovaChooseController">
+   <children>
+      <Label layoutX="99.0" layoutY="14.0" style="-fx-background-radius: 5em;" text="Choose Eagle Application Type" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="theme1" alignment="CENTER" layoutX="100.0" layoutY="49.0" onMouseClicked="#theme1act" prefHeight="30.0" prefWidth="246.0" style="-fx-background-color: #52b69a; -fx-background-radius: 3em;" text="Normal Application" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="theme2" alignment="CENTER" layoutX="100.0" layoutY="211.0" onMouseClicked="#theme2act" prefHeight="30.0" prefWidth="246.0" style="-fx-background-color: #52b69a; -fx-background-radius: 3em;" text="Build A Web Game" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="theme3" alignment="CENTER" layoutX="100.0" layoutY="298.0" onMouseClicked="#theme3act" prefHeight="30.0" prefWidth="246.0" style="-fx-background-color: #52b69a; -fx-background-radius: 3em;" text="Quiz Application" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="theme11" alignment="CENTER" layoutX="100.0" layoutY="129.0" onMouseClicked="#theme11act" prefHeight="30.0" prefWidth="246.0" style="-fx-background-color: #52b69a; -fx-background-radius: 3em;" text="Build For Website" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

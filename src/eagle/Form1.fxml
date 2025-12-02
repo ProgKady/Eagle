@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="Form1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.Form1Controller">
+   <children>
+      <Label layoutX="250.0" layoutY="31.0" text="Personal Information" textFill="#24a0ed">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="150.0" layoutX="275.0" layoutY="70.0" onMouseClicked="#imgact" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@image.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="name" labelFloat="true" layoutX="100.0" layoutY="228.0" prefHeight="25.0" prefWidth="500.0" promptText="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="job" labelFloat="true" layoutX="100.0" layoutY="275.0" prefHeight="25.0" prefWidth="500.0" promptText="Job">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="birthday" labelFloat="true" layoutX="100.0" layoutY="320.0" prefHeight="25.0" prefWidth="500.0" promptText="Birthday">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="address" labelFloat="true" layoutX="100.0" layoutY="364.0" prefHeight="25.0" prefWidth="500.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="100.0" layoutY="409.0" prefHeight="25.0" prefWidth="500.0" promptText="Email">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="number" labelFloat="true" layoutX="100.0" layoutY="453.0" prefHeight="25.0" prefWidth="500.0" promptText="Mobile Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</Pane>

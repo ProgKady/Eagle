@@ -1,0 +1,44 @@
+
+/* Theme: Cobalt2 */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #193549;
+    -fx-text-fill: #ffffff;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #2c3e50;
+}
+
+.codearea:focused {
+    -fx-border-color: #ff9d00;
+}
+
+.keyword {
+    -fx-fill: #ff628c;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #a5ff90;
+}
+
+.comment {
+    -fx-fill: #888888;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #ffc600;
+}
+
+.function {
+    -fx-fill: #ff628c;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #80ffbb;
+}

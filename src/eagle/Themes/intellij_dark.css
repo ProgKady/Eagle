@@ -1,0 +1,44 @@
+
+/* Theme: IntelliJ Dark */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #a9b7c6;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #3c3f41;
+}
+
+.codearea:focused {
+    -fx-border-color: #287bde;
+}
+
+.keyword {
+    -fx-fill: #cc7832;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #6a8759;
+}
+
+.comment {
+    -fx-fill: #808080;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #6897bb;
+}
+
+.function {
+    -fx-fill: #cc7832;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #a9b7c6;
+}

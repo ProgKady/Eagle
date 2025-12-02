@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="765.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CreateQuiz2ApkController_1">
+   <children>
+      <JFXTextField fx:id="apkname" labelFloat="true" layoutX="414.0" layoutY="424.0" prefHeight="33.0" prefWidth="342.0" promptText="APK Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="pathlabel" layoutX="21.0" layoutY="121.0" prefHeight="21.0" prefWidth="554.0" style="-fx-background-color: white;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="imgview" fitHeight="87.0" fitWidth="90.0" layoutX="540.0" layoutY="310.0" onMouseClicked="#imgviewact" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: red; -fx-border-width: 3;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@resize.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="packagename" labelFloat="true" layoutX="413.0" layoutY="483.0" prefHeight="33.0" prefWidth="342.0" promptText="Package Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create" buttonType="RAISED" layoutX="502.0" layoutY="537.0" onAction="#createact" prefHeight="29.0" prefWidth="163.0" style="-fx-background-color: #2a9d8f; -fx-background-radius: 3em;" text="Create">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="browse1" buttonType="RAISED" disable="true" layoutX="676.0" layoutY="473.0" onAction="#browse1act" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #24a0ed;" text="Browse..." textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="htmlfile" blendMode="DARKEN" editable="false" labelFloat="true" layoutX="412.0" layoutY="466.0" prefHeight="29.0" prefWidth="251.0" promptText="Browse To Html Index File..." visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="zipfile" blendMode="DARKEN" editable="false" labelFloat="true" layoutX="412.0" layoutY="514.0" prefHeight="29.0" prefWidth="251.0" promptText="Browse To Resources Zip File..." visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="browse2" buttonType="RAISED" disable="true" layoutX="676.0" layoutY="521.0" onAction="#browse2act" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #24a0ed;" text="Browse..." textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="quizdata" labelFloat="true" layoutX="7.0" layoutY="24.0" prefHeight="188.0" prefWidth="751.0" promptText="Here you will find all data of your questions, you can replace the place of the right answer here because we didn't change its place">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="question" layoutX="7.0" layoutY="234.0" prefHeight="29.0" prefWidth="751.0" promptText="Write a Question">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="a1" labelFloat="true" layoutX="9.0" layoutY="285.0" prefHeight="29.0" prefWidth="112.0" promptText="Option 1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="a2" labelFloat="true" layoutX="135.0" layoutY="285.0" prefHeight="29.0" prefWidth="120.0" promptText="Option 2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="a3" labelFloat="true" layoutX="271.0" layoutY="285.0" prefHeight="29.0" prefWidth="112.0" promptText="Option 3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="answer" labelFloat="true" layoutX="135.0" layoutY="335.0" prefHeight="37.0" prefWidth="251.0" promptText="Write Right Answer, EX: Repeat It">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addq" buttonType="RAISED" layoutX="146.0" layoutY="390.0" onAction="#addqact" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #2a9d8f; -fx-background-radius: 3em;" text="Add Question" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="wanumber" labelFloat="true" layoutX="215.0" layoutY="441.0" prefHeight="33.0" prefWidth="187.0" promptText="Timer in Seconds, Ex: 30">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="a4" labelFloat="true" layoutX="9.0" layoutY="337.0" prefHeight="33.0" prefWidth="112.0" promptText="Option 4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="myname" labelFloat="true" layoutX="14.0" layoutY="488.0" prefHeight="33.0" prefWidth="187.0" promptText="Password Of Restart">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="quizname" labelFloat="true" layoutX="14.0" layoutY="440.0" prefHeight="29.0" prefWidth="187.0" promptText="Quiz Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="wanumber1" labelFloat="true" layoutX="215.0" layoutY="488.0" prefHeight="33.0" prefWidth="187.0" promptText="WhatsApp Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="wanumber11" labelFloat="true" layoutX="14.0" layoutY="536.0" prefHeight="33.0" prefWidth="187.0" promptText="Questions Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="imgview1" fitHeight="87.0" fitWidth="90.0" layoutX="128.0" layoutY="579.0" onMouseClicked="#imgview1act" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: red; -fx-border-width: 3;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@resize.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="pathlabel1" layoutX="31.0" layoutY="131.0" prefHeight="21.0" prefWidth="554.0" style="-fx-background-color: white;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="613.0" text="Quiz Logo" underline="true" />
+   </children>
+</Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="610.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.ChooseQuizController">
+   <children>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="70.0" onMouseClicked="#theme1act" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #48cae4; -fx-background-radius: 3em;" text="Test Your Student (1)" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="295.0" onMouseClicked="#theme2act" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #48cae4; -fx-background-radius: 3em; -fx-border-width: 5px; -fx-border-color: #ffc300; -fx-border-radius: 3em;" text="Test Yourself" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="521.0" onMouseClicked="#quiz3action" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #48cae4; -fx-background-radius: 3em;" text="Test Your Student (2)" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

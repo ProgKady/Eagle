@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="Form4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.Form4Controller">
+   <children>
+      <JFXTextArea editable="false" layoutX="118.0" layoutY="14.0" prefHeight="100.0" prefWidth="463.0" text="Create Google form with three entries then get link of form and ids of three entries then add them here, if you can't do that, please contact us on our email or click help in main frame from settings box, you will find the explaination with pictures.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="link" labelFloat="true" layoutX="118.0" layoutY="317.0" prefHeight="27.0" prefWidth="463.0" promptText="Link">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="conaddbtn" buttonType="RAISED" layoutX="609.0" layoutY="376.0" onAction="#conaddbtnact" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: #24a0ed;" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXTextArea fx:id="condata" labelFloat="true" layoutX="118.0" layoutY="149.0" prefHeight="142.0" prefWidth="463.0" promptText="Contact Data">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="nameid" labelFloat="true" layoutX="118.0" layoutY="364.0" prefHeight="27.0" prefWidth="463.0" promptText="Name ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="emailid" labelFloat="true" layoutX="118.0" layoutY="415.0" prefHeight="27.0" prefWidth="463.0" promptText="Email ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="messageid" labelFloat="true" layoutX="119.0" layoutY="463.0" prefHeight="27.0" prefWidth="463.0" promptText="Message ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="creportfoliobtn" buttonType="RAISED" layoutX="284.0" layoutY="505.0" onAction="#creportfoliobtnact" style="-fx-background-color: #db5f12;" text="Create Portfolio">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</Pane>

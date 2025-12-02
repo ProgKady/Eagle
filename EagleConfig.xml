@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\Programs_KADY\Eagle\dist\Eagle.jar</jar>
+  <outfile>D:\Programs_KADY\Eagle\dist\Eagle IDE.exe</outfile>
+  <errTitle>Java Not Found - Kadysoft Ltd</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>Call Me At : +201555266002</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\Programs_KADY\Eagle\iconn.ico</icon>
+  <jre>
+    <path>Java</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>jdkOnly</jdkPreference>
+    <runtimeBits>64</runtimeBits>
+  </jre>
+  <splash>
+    <file>D:\Programs_KADY\Eagle\Eagle_Splash.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>60</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+  <versionInfo>
+    <fileVersion>25.0.1.1</fileVersion>
+    <txtFileVersion>25.0.1.ks</txtFileVersion>
+    <fileDescription>Eagle IDE for Building Website, Desktop and Apks.</fileDescription>
+    <copyright>All Rights Reserved @ Kadysoft Ltd. 2017 - 2025</copyright>
+    <productVersion>25.0.1.1</productVersion>
+    <txtProductVersion>25.0.1.ks</txtProductVersion>
+    <productName>Eagle IDE</productName>
+    <companyName>Kadysoft Ltd</companyName>
+    <internalName>Eagle IDE</internalName>
+    <originalFilename>Eagle IDE.exe</originalFilename>
+    <trademarks>Kadysoft Ltd.</trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>

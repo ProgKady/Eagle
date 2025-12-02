@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="500.0" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CreateMusicApkOneController">
+   <children>
+      <JFXTextField fx:id="apkname" labelFloat="true" layoutX="14.0" layoutY="388.0" prefHeight="29.0" prefWidth="383.0" promptText="APK Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="pathlabel" layoutX="21.0" layoutY="121.0" prefHeight="21.0" prefWidth="554.0" style="-fx-background-color: white;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="imgview" fitHeight="98.0" fitWidth="100.0" layoutX="204.0" layoutY="14.0" onMouseClicked="#imgviewact" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@resize.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="packagename" labelFloat="true" layoutX="14.0" layoutY="437.0" prefHeight="29.0" prefWidth="383.0" promptText="Package Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="221.0" layoutY="586.0" onAction="#createact" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Create">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="browse1" buttonType="RAISED" disable="true" layoutX="412.0" layoutY="486.0" onAction="#browse1act" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="htmlfile" editable="false" labelFloat="true" layoutX="14.0" layoutY="486.0" prefHeight="29.0" prefWidth="383.0" promptText="Browse To Songs Zip File...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="zipfile" editable="false" labelFloat="true" layoutX="14.0" layoutY="534.0" prefHeight="29.0" prefWidth="383.0" promptText="Browse To Images Zip File...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="browse2" buttonType="RAISED" disable="true" layoutX="412.0" layoutY="534.0" onAction="#browse2act" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="tarea" layoutX="18.0" layoutY="142.0" prefHeight="158.0" prefWidth="465.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextArea>
+      <JFXButton fx:id="bi" buttonType="RAISED" disable="true" layoutX="311.0" layoutY="332.0" onAction="#biact" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse image">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="bs" buttonType="RAISED" layoutX="76.0" layoutY="332.0" onAction="#bsact" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse Song">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="369.0" layoutY="274.0" onMouseClicked="#genscript" prefHeight="20.0" prefWidth="116.0" style="-fx-font-weight: bold; -fx-background-color: #52b788; -fx-background-radius: 3em; -fx-text-fill: blue;" text="Generate Script" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

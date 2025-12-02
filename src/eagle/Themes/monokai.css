@@ -1,0 +1,44 @@
+
+/* Theme: Monokai */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #272822;
+    -fx-text-fill: #f8f8f2;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #75715e;
+}
+
+.codearea:focused {
+    -fx-border-color: #f92672;
+}
+
+.keyword {
+    -fx-fill: #e6db74;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #a6e22e;
+}
+
+.comment {
+    -fx-fill: #75715e;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #ae81ff;
+}
+
+.function {
+    -fx-fill: #e6db74;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #66d9ef;
+}

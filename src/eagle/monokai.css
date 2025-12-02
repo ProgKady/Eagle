@@ -1,0 +1,113 @@
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #272822; /* Monokai background */
+    -fx-text-fill: #f8f8f2;         /* Default text color */
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #444;
+}
+
+.codearea:focused {
+    -fx-border-color: #66d9ef; /* Cyan when focused */
+}
+
+/* Syntax Highlighting */
+.keyword {
+    -fx-fill: #f92672; /* Pinkish red */
+    -fx-font-weight: bold;
+}
+
+.semicolon {
+    -fx-font-weight: bold;
+}
+
+.paren {
+    -fx-fill: #f92672;
+    -fx-font-weight: bold;
+}
+
+.bracket {
+    -fx-fill: #ae81ff; /* Light purple */
+    -fx-font-weight: bold;
+}
+
+.brace {
+    -fx-fill: #fd971f; /* Orange */
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #e6db74; /* Yellow */
+}
+
+.comment {
+    -fx-fill: #75715e; /* Gray */
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #ae81ff; /* Light purple */
+}
+
+.function {
+    -fx-fill: #a6e22e; /* Green */
+    -fx-font-weight: bold;
+}
+
+.constant {
+    -fx-fill: #66d9ef; /* Cyan */
+}
+
+.operator {
+    -fx-fill: #f92672; /* Pinkish red */
+}
+
+.variable {
+    -fx-fill: #f8f8f2; /* Default text */
+}
+
+.line-number {
+    -fx-fill: #75715e;
+    -fx-padding-right: 10px;
+}
+
+.cursor-line {
+    -fx-background-color: #3e3d32;
+}
+
+.error {
+    -fx-fill: #ff5555;
+    -fx-background-color: #ff555533;
+    -fx-font-weight: bold;
+    -fx-padding: 2px;
+    -fx-border-radius: 4px;
+}
+
+.paragraph-box:has-caret {
+    -fx-background-color: #3e3d32;
+}
+
+/* Scrollbar Styling */
+.codearea .scroll-bar:vertical,
+.codearea .scroll-bar:horizontal {
+    -fx-background-color: #2d2d2d;
+    -fx-padding: 2;
+    -fx-border-radius: 5px;
+}
+
+.codearea .thumb {
+    -fx-background-color: #66d9ef;
+    -fx-border-radius: 5px;
+}
+
+.codearea .thumb:hover {
+    -fx-background-color: #3bc2e3;
+}
+
+.codearea .selection {
+    -fx-background-color: #49483e;
+    -fx-text-fill: white;
+}

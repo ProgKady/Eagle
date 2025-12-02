@@ -1,0 +1,44 @@
+body{background:url(../images/bg.jpg)no-repeat center fixed;background-repeat:no-repeat;background-size:100% 100%;}
+.navbar{background-color:#4892b5;}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus{background-color:rgba(128, 74, 74, 0.21);color:#fff;}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{background-color:#C34E4E;}
+#footer{background-color:#4892b5;}
+.carousel-inner{height:100vh;}
+#login{padding-top:25px;}
+.login_form{padding:15% 10px;}
+.shadow_box{background-color:#ccc;padding:3% 10px 10% 10px;border-radius:5px;border:2px outset #CECECE;-webkit-box-shadow:20px 17px 24px -6px rgba(0,0,0,0.42);-moz-box-shadow:20px 17px 24px -6px rgba(0,0,0,0.42);box-shadow:20px 17px 24px -6px rgba(0,0,0,0.42);}
+.login_form label{text-align:left !important;margin-left:5px;}
+.login_form .forgot_password{color:#4e4e4e;font-weight:normal;}
+.login_form .forgot_password:hover{font-weight:bold;}
+.options input[type=checkbox]{position:absolute;left:-9999px;}
+.options label{display:block;position:relative;margin:20px;padding:10px;border:3px solid #fff;border-radius:100px;color:#fff;background-color:#6a8494;box-shadow:0 0 20px rgba(0, 0, 0, .2);word-wrap:nowrap;cursor:pointer;user-select:none;transition:background-color .2s, box-shadow .2s;}
+.options label:hover, input:focus + label{box-shadow:0 0 20px rgba(0, 0, 0, .6);}
+.options input:checked + label{background-color:#ED8181;}
+.next_btn{margin-right:35px;font-weight:bold;background-color:#ED8181;color:#fff;}
+.next_btn:hover{background-color:#ED8191;color:#fff;}
+.options input:checked + label::before{background-color:#fff;}
+.question{float:left;padding-left:35px;}
+.hide{display:none;}
+//.book_box{padding:20px;border:1px solid #C34E4E;border-radius:5px}
+.book_img{background-color:#ccc;border:2px outset;margin-bottom:10px;margin-top:20px}
+.book_box  .book_name{font-size:20px;padding-right:10px;}
+.book_box  .book_price{font-size:16px;padding-right:10px;margin-bottom:5px;}
+.book_box  .buy_book{
+	margin:5px;
+	background-color: #ccc;
+	font-size:18px;
+	padding-right:10px;
+	color:#C34E4E;
+	padding:4px;
+	margin-left:-7px;
+}
+.book_box  .buy_book:hover{
+	background-color:#d1cfcf;
+	color:#C34E4E;
+	border-radius:5px;
+}

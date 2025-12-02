@@ -1,0 +1,44 @@
+
+/* Theme: Eclipse Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #dddddd;
+}
+
+.codearea:focused {
+    -fx-border-color: #0066cc;
+}
+
+.keyword {
+    -fx-fill: #7f0055;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #2a00ff;
+}
+
+.comment {
+    -fx-fill: #3f7f5f;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #990000;
+}
+
+.function {
+    -fx-fill: #7f0055;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #000080;
+}

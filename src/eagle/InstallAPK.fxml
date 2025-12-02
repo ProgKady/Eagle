@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="566.0" styleClass="back" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.InstallAPKController">
+   <children>
+      <JFXTextField fx:id="pathtoapk" editable="false" labelFloat="true" layoutX="28.0" layoutY="176.0" prefHeight="35.0" prefWidth="429.0" promptText="Browse to apk..." style="-fx-border-style: solid; -fx-border-width: 3px;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.3" />
+         </effect>
+      </JFXTextField>
+      <JFXButton fx:id="instalbtn" buttonType="RAISED" disable="true" layoutX="259.0" layoutY="248.0" onAction="#installapk" style="-fx-background-color: green;" text="Install" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.3" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="brobtn" buttonType="RAISED" layoutX="469.0" layoutY="178.0" onAction="#browseapk" style="-fx-background-color: #4059a9;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.3" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="14.0" style="-fx-background-color: white; -fx-background-radius: 3px;" text="Note:" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="28.0" layoutY="58.0" style="-fx-background-color: white; -fx-background-radius: 3px;" text="1: You should install Android SDK to can use this tool.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="28.0" layoutY="89.0" style="-fx-background-color: white; -fx-background-radius: 3px;" text="2: You should Enable USB Debugger In Debugger Mode settings in your mobile.">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="121.0" style="-fx-background-color: white; -fx-background-radius: 3px;" text="3: To download SDK: ">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="176.0" layoutY="117.0" style="-fx-background-color: white; -fx-background-radius: 2px;" text="https://developer.android.com">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

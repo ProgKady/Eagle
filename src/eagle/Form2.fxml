@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="Form2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.Form2Controller">
+   <children>
+      <JFXTextArea fx:id="aboutarea" labelFloat="true" layoutX="76.0" layoutY="30.0" prefHeight="137.0" prefWidth="548.0" promptText="About Me (Summary)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="addone" buttonType="RAISED" layoutX="309.0" layoutY="505.0" onAction="#addoneact" style="-fx-background-color: #24a0ed;" text="Add One">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextArea fx:id="services" labelFloat="true" layoutX="76.0" layoutY="196.0" prefHeight="175.0" prefWidth="548.0" promptText="What are you doing? (Your Services or Qualifications)...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="detailslist" labelFloat="true" layoutX="391.0" layoutY="397.0" prefHeight="80.0" prefWidth="234.0" promptText="Details">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="topiclist" labelFloat="true" layoutX="76.0" layoutY="423.0" prefHeight="25.0" prefWidth="259.0" promptText="Topic">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</Pane>

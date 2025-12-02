@@ -1,0 +1,9 @@
+.codearea {
+    -fx-font-family: 'Courier', monospace;
+    -fx-font-size: 16px;
+    -fx-background-color: #002b36;
+    -fx-text-fill: #839496;
+}
+.keyword { -fx-fill: #268bd2; -fx-font-weight: bold; }
+.string { -fx-fill: #2aa198; }
+.comment { -fx-fill: #586e75; -fx-font-style: italic; }

@@ -1,0 +1,42 @@
+
+/* 
+    Created on : May 12, 2025, 12:45:47 PM
+    Author     : ahmed.elkady
+*/
+
+
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-background-color: #6200ea;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #3700b3;
+}
+
+.tab-pane .tab-header-area .tab {
+    -fx-background-color: #6200ea;
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab-header-area .tab:selected {
+    -fx-background-color: #3700b3;
+}
+
+.text-field {
+    -fx-pref-width: 300px;
+    -fx-font-size: 14px;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}

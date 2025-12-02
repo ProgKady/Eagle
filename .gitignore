@@ -1,0 +1,16 @@
+dist/
+build/
+*.jar
+*.zip
+*.rar
+*.exe
+*.dll
+dist/
+build/
+*.jar
+*.zip
+*.rar
+*.exe
+*.dll
+*.mp4
+*.mp3

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="732.0" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CVController">
+   <children>
+      <Label alignment="CENTER" layoutX="299.0" layoutY="25.0" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #03045e; -fx-background-radius: 3em;" text="Basic CV" textFill="#173786">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="271.0" layoutY="288.0" prefHeight="30.0" prefWidth="194.0" style="-fx-background-color: #03045e; -fx-background-radius: 3em;" text="Advanced CV" textFill="#173786">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="b1" fitHeight="150.0" fitWidth="150.0" layoutX="568.0" layoutY="90.0" onMouseClicked="#b1act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@dsf_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b2" fitHeight="150.0" fitWidth="150.0" layoutX="291.0" layoutY="90.0" onMouseClicked="#b2act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@fdfd_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b3" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="90.0" onMouseClicked="#b3act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@gf_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a1" fitHeight="150.0" fitWidth="150.0" layoutX="568.0" layoutY="357.0" onMouseClicked="#a1act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@fgf_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a2" fitHeight="150.0" fitWidth="150.0" layoutX="384.0" layoutY="357.0" onMouseClicked="#a2act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@ghgh_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a3" fitHeight="150.0" fitWidth="150.0" layoutX="201.0" layoutY="357.0" onMouseClicked="#a3act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@gfh_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a4" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="357.0" onMouseClicked="#a4act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@gffg_150x150.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="642.0" layoutY="559.0" onAction="#createact" prefHeight="36.0" prefWidth="79.0" style="-fx-background-color: #03045e;" text="Create">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="path" disable="true" editable="false" labelFloat="true" layoutX="12.0" layoutY="559.0" prefHeight="29.0" prefWidth="620.0" promptText="Choose Theme Above">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create1" buttonType="RAISED" layoutX="322.0" layoutY="529.0" onAction="#createact1" style="-fx-background-color: #24a0ed;" text="Create Me" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</Pane>

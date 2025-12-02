@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="500.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CreateHtmlApkController">
+   <children>
+      <JFXTextField fx:id="apkname" labelFloat="true" layoutX="25.0" layoutY="155.0" prefHeight="29.0" prefWidth="367.0" promptText="APK Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="pathlabel" layoutX="21.0" layoutY="121.0" prefHeight="21.0" prefWidth="554.0" style="-fx-background-color: white;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="imgview" fitHeight="108.0" fitWidth="109.0" layoutX="198.0" layoutY="24.0" onMouseClicked="#imgviewact" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="packagename" labelFloat="true" layoutX="26.0" layoutY="205.0" prefHeight="29.0" prefWidth="367.0" promptText="Package Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="221.0" layoutY="381.0" onAction="#createact" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Create">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="browse1" buttonType="RAISED" disable="true" layoutX="413.0" layoutY="257.0" onAction="#browse1act" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="htmlfile" editable="false" labelFloat="true" layoutX="26.0" layoutY="257.0" prefHeight="29.0" prefWidth="367.0" promptText="Browse To Html Index File...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="zipfile" editable="false" labelFloat="true" layoutX="25.0" layoutY="311.0" prefHeight="29.0" prefWidth="367.0" promptText="Browse To Resources Zip File...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="browse2" buttonType="RAISED" disable="true" layoutX="413.0" layoutY="311.0" onAction="#browse2act" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

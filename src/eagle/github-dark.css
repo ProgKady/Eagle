@@ -1,0 +1,9 @@
+.codearea {
+    -fx-font-family: 'Source Code Pro', monospace;
+    -fx-font-size: 16px;
+    -fx-background-color: #0d1117;
+    -fx-text-fill: #c9d1d9;
+}
+.keyword { -fx-fill: #58a6ff; -fx-font-weight: bold; }
+.string { -fx-fill: #a5d6ff; }
+.comment { -fx-fill: #8b949e; -fx-font-style: italic; }

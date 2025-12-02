@@ -1,0 +1,44 @@
+
+/* Theme: Solarized Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #fdf6e3;
+    -fx-text-fill: #657b83;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #93a1a1;
+}
+
+.codearea:focused {
+    -fx-border-color: #268bd2;
+}
+
+.keyword {
+    -fx-fill: #859900;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #2aa198;
+}
+
+.comment {
+    -fx-fill: #93a1a1;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #b58900;
+}
+
+.function {
+    -fx-fill: #859900;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #268bd2;
+}

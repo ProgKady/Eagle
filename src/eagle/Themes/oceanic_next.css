@@ -1,0 +1,44 @@
+
+/* Theme: Oceanic Next */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #1b2b34;
+    -fx-text-fill: #d8dee9;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #343d46;
+}
+
+.codearea:focused {
+    -fx-border-color: #c594c5;
+}
+
+.keyword {
+    -fx-fill: #99c794;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #5fb3b3;
+}
+
+.comment {
+    -fx-fill: #65737e;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #fac863;
+}
+
+.function {
+    -fx-fill: #99c794;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #6699cc;
+}

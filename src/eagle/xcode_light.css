@@ -1,0 +1,44 @@
+
+/* Theme: Xcode Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #dcdcdc;
+}
+
+.codearea:focused {
+    -fx-border-color: #007aff;
+}
+
+.keyword {
+    -fx-fill: #a90d91;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #50a14f;
+}
+
+.comment {
+    -fx-fill: #a0a1a7;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #986801;
+}
+
+.function {
+    -fx-fill: #a90d91;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #4078f2;
+}

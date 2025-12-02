@@ -1,0 +1,44 @@
+
+/* Theme: GitHub Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #fdfdfd;
+    -fx-text-fill: #24292e;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #d1d5da;
+}
+
+.codearea:focused {
+    -fx-border-color: #0366d6;
+}
+
+.keyword {
+    -fx-fill: #d73a49;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #032f62;
+}
+
+.comment {
+    -fx-fill: #6a737d;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #005cc5;
+}
+
+.function {
+    -fx-fill: #d73a49;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #22863a;
+}

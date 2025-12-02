@@ -1,0 +1,33 @@
+/* Material light theme with vibrant primary colors. */
+/* Sample CodeArea theme - will vary per file in real use */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+}
+
+.keyword { -fx-fill: #1e88e5; -fx-font-weight: bold; }
+.semicolon { -fx-font-weight: bold; }
+.paren { -fx-fill: #e91e63; -fx-font-weight: bold; }
+.bracket { -fx-fill: #8e44ad; -fx-font-weight: bold; }
+.brace { -fx-fill: #009688; -fx-font-weight: bold; }
+.string { -fx-fill: #4caf50; }
+.comment { -fx-fill: #9e9e9e; -fx-font-style: italic; }
+.number { -fx-fill: #ff9800; }
+.function { -fx-fill: #00bcd4; -fx-font-weight: bold; }
+.constant { -fx-fill: #f44336; }
+.operator { -fx-fill: #9c27b0; }
+.variable { -fx-fill: #3498db; }
+.line-number { -fx-fill: #888; -fx-padding-right: 10px; }
+.cursor-line { -fx-background-color: #f0f0f0; }
+.error {
+    -fx-fill: #e74c3c;
+    -fx-background-color: #e74c3c33;
+    -fx-font-weight: bold;
+    -fx-padding: 2px;
+    -fx-border-radius: 4px;
+}
+.paragraph-box:has-caret { -fx-background-color: #f2f9fc; }

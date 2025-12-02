@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="468.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CVChooseController">
+   <children>
+      <Label alignment="CENTER" layoutX="140.0" layoutY="28.0" prefHeight="26.0" prefWidth="181.0" style="-fx-background-radius: 5em;" text="Choose CV Type" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="theme1" alignment="CENTER" layoutX="158.0" layoutY="169.0" onMouseClicked="#theme1act" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #0096c7; -fx-background-radius: 3em;" text="Fixed CV" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="theme2" alignment="CENTER" layoutX="158.0" layoutY="233.0" onMouseClicked="#theme2act" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #0096c7; -fx-background-radius: 3em;" text="Create CV" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</Pane>

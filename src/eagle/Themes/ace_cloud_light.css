@@ -1,0 +1,44 @@
+
+/* Theme: Ace Cloud Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2b2b2b;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #cccccc;
+}
+
+.codearea:focused {
+    -fx-border-color: #3399ff;
+}
+
+.keyword {
+    -fx-fill: #005cc5;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #009688;
+}
+
+.comment {
+    -fx-fill: #aaaaaa;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #cc3300;
+}
+
+.function {
+    -fx-fill: #005cc5;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #3366cc;
+}

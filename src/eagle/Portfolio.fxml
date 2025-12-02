@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.PortfolioController">
+   <children>
+      <ImageView fx:id="p1" fitHeight="150.0" fitWidth="150.0" layoutX="225.0" layoutY="37.0" onMouseClicked="#p1act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@hjjj_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p2" fitHeight="150.0" fitWidth="150.0" layoutX="435.0" layoutY="258.0" onMouseClicked="#p2act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@ggf_150x150.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p3" fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="258.0" onMouseClicked="#p3act" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@gbgf_150x150.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="523.0" layoutY="600.0" onAction="#createact" style="-fx-background-color: #24a0ed;" text="Create">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="path" disable="true" editable="false" labelFloat="true" layoutX="14.0" layoutY="600.0" prefHeight="29.0" prefWidth="484.0" promptText="Choose Portfolio Theme">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create1" buttonType="RAISED" layoutX="254.0" layoutY="570.0" onAction="#create1act" style="-fx-background-color: #24a0ed;" text=" Create Me" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

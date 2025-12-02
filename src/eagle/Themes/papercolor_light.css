@@ -1,0 +1,44 @@
+
+/* Theme: PaperColor Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #eeeeee;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #cccccc;
+}
+
+.codearea:focused {
+    -fx-border-color: #005f87;
+}
+
+.keyword {
+    -fx-fill: #8700af;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #00875f;
+}
+
+.comment {
+    -fx-fill: #444444;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #af5f00;
+}
+
+.function {
+    -fx-fill: #8700af;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #005faf;
+}

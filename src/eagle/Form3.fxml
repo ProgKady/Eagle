@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="Form3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.Form3Controller">
+   <children>
+      <JFXTextArea fx:id="edudata" labelFloat="true" layoutX="222.0" layoutY="27.0" prefHeight="125.0" prefWidth="464.0" promptText="Education">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="addedu" labelFloat="true" layoutX="18.0" layoutY="127.0" prefHeight="29.0" prefWidth="189.0" promptText="Add University">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="edufrom" editable="true" labelFloat="true" layoutX="25.0" layoutY="40.0" prefHeight="25.0" prefWidth="65.0" promptText="From" style="-fx-background-color: #24a0ed; -fx-background-radius: 3em;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXComboBox>
+      <JFXComboBox fx:id="eduto" editable="true" labelFloat="true" layoutX="131.0" layoutY="40.0" prefHeight="25.0" prefWidth="65.0" promptText="To" style="-fx-background-color: #24a0ed; -fx-background-radius: 3em;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXComboBox>
+      <JFXButton fx:id="eduaddbtn" layoutX="88.0" layoutY="74.0" onAction="#eduaddbtnact" style="-fx-background-color: #24a0ed;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="exdata" labelFloat="true" layoutX="222.0" layoutY="189.0" prefHeight="125.0" prefWidth="464.0" promptText="Experience">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea fx:id="skdata" labelFloat="true" layoutX="222.0" layoutY="338.0" prefHeight="125.0" prefWidth="464.0" promptText="Skills">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextField fx:id="addex" labelFloat="true" layoutX="18.0" layoutY="285.0" prefHeight="29.0" prefWidth="189.0" promptText="Write Experience">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="exaddbtn" layoutX="88.0" layoutY="227.0" onAction="#exaddbtnact" style="-fx-background-color: #24a0ed;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="exto" editable="true" labelFloat="true" layoutX="131.0" layoutY="189.0" prefHeight="25.0" prefWidth="65.0" promptText="To" style="-fx-background-color: #24a0ed; -fx-background-radius: 3em;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXComboBox>
+      <JFXComboBox fx:id="exfrom" editable="true" labelFloat="true" layoutX="25.0" layoutY="189.0" prefHeight="25.0" prefWidth="65.0" promptText="From" style="-fx-background-color: #24a0ed; -fx-background-radius: 3em;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXComboBox>
+      <JFXTextField fx:id="addsk" labelFloat="true" layoutX="18.0" layoutY="434.0" prefHeight="29.0" prefWidth="189.0" promptText="Write Skill">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="skaddbtn" layoutX="88.0" layoutY="370.0" onAction="#skaddbtnact" style="-fx-background-color: #24a0ed;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="picnum" labelFloat="true" layoutX="18.0" layoutY="495.0" prefHeight="29.0" prefWidth="132.0" promptText="Pics Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="picpath" labelFloat="true" layoutX="178.0" layoutY="495.0" prefHeight="29.0" prefWidth="379.0" promptText="Browse to pictures of your work in zip...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="browse" layoutX="590.0" layoutY="494.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #24a0ed;" text="Browse">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

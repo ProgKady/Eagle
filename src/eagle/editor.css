@@ -1,0 +1,16 @@
+.html-tag {
+    -fx-fill: purple;
+    -fx-font-weight: bold;
+}
+
+.js-keyword {
+    -fx-fill: blue;
+}
+
+.css-id {
+    -fx-fill: green;
+}
+
+.css-class {
+    -fx-fill: darkorange;
+}

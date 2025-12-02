@@ -1,0 +1,44 @@
+
+/* Theme: SynthWave '84 */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #2b213a;
+    -fx-text-fill: #f92aad;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #1a1a2e;
+}
+
+.codearea:focused {
+    -fx-border-color: #f59bff;
+}
+
+.keyword {
+    -fx-fill: #e1efff;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #d4bfff;
+}
+
+.comment {
+    -fx-fill: #a59aca;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #f1fa8c;
+}
+
+.function {
+    -fx-fill: #e1efff;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #00f9ff;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\Programs_KADY\Eagle\dist\Eagle.jar</jar>
+  <outfile>D:\Programs_KADY\Eagle\dist\Eagle.exe</outfile>
+  <errTitle>Eagle, Java Env Error</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\Programs_KADY\Eagle\eagle.ico</icon>
+  <jre>
+    <path>C:\Program Files\Java\jdk1.8.0_161</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>20.1.0.1</fileVersion>
+    <txtFileVersion>20.1.0.1</txtFileVersion>
+    <fileDescription>Eagle for creating web projects, android and desktop applications.</fileDescription>
+    <copyright>All Rights Reserved @ Kadysoft 2017-2024</copyright>
+    <productVersion>20.1.0.1</productVersion>
+    <txtProductVersion>20.1.0.1</txtProductVersion>
+    <productName>Eagle</productName>
+    <companyName>Kadysoft</companyName>
+    <internalName>Eagle</internalName>
+    <originalFilename>Eagle.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

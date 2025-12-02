@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="379.0" style="-fx-background-color: white;" styleClass="baky" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CreateJsProjectController">
+   <children>
+      <JFXTextField fx:id="proname" blendMode="DARKEN" labelFloat="true" layoutX="27.0" layoutY="63.0" prefHeight="29.0" prefWidth="321.0" promptText="Project Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prodes" blendMode="DARKEN" editable="false" labelFloat="true" layoutX="27.0" layoutY="114.0" prefHeight="29.0" prefWidth="232.0" promptText="Project Destination...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="161.0" layoutY="239.0" onAction="#createact" style="-fx-background-color: #db5f12;" text="Create">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="browse" buttonType="RAISED" layoutX="274.0" layoutY="114.0" onAction="#browseact" style="-fx-background-color: #24a0ed;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

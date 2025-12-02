@@ -1,0 +1,44 @@
+
+/* Theme: Tomorrow Light */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #fdfdfd;
+    -fx-text-fill: #4d4d4c;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #e0e0e0;
+}
+
+.codearea:focused {
+    -fx-border-color: #4271ae;
+}
+
+.keyword {
+    -fx-fill: #8959a8;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #718c00;
+}
+
+.comment {
+    -fx-fill: #8e908c;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #f5871f;
+}
+
+.function {
+    -fx-fill: #8959a8;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #4271ae;
+}

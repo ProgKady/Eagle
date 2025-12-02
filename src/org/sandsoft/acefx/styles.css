@@ -1,0 +1,46 @@
+ 
+
+.open-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/open.png');
+}
+.save-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/save.png');
+}
+.reload-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/refresh.png');
+}
+.cut-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/cut.png');
+}
+.copy-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/copy.png');
+}
+.paste-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/paste.png');
+}
+.undo-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/undo.png');
+}
+.redo-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/redo.png');
+}
+.find-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/find.png');
+}
+.replace-button {
+    -fx-content-display: graphic-only;
+    -fx-graphic: url('resource/replace.png');
+}
+.options-button {   
+    -fx-content-display: graphic-only; 
+    -fx-graphic: url('resource/options.png');
+}

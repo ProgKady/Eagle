@@ -1,0 +1,183 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    height: 100vh;
+    /* width: 100vw */
+    background-color:#0051a9;
+    position: relative;
+}   
+.background {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/mountain.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}
+
+.container { 
+    display: inline-block;
+  width: 95%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.left-column {
+    display: inline-block;
+    width: 40%;
+    background-color:#0051a9;
+    background-image: url(./images/mountain.jpg);
+    background-size: cover;
+    /* background-size: 100% 100%; / contain / cover */
+    /* background-repeat: no-repeat; */
+    /* background-position: left / right / center / bottom */
+    /* background-attachment: fixed; */
+    padding: 30px;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+}
+.main-title {
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+.bottom-links {
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+}
+.link {
+    color: #fff;
+}
+.symbol {
+    color: #fff;
+    display: inline-block;
+}
+.right-column {
+    float: right;
+    width: 60%;
+    background-color: #fff;
+    padding: 60px;
+    position: relative;
+}
+.close {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.form {
+    display: inline-block;
+    width: 100%;
+}
+.form > .form-row {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.form > .form-row:last-child {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.form > .form-row > label {
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #777;
+}
+.form > .form-row > input {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.form > .form-row > select {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+
+.form > .form-row > input:focus {
+    background-color: rgba(195, 131, 255, 0.425);
+    outline: 1px dashed red;
+}
+.form > .form-row > button {
+    float: left;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: bold;
+    background-color: #015cda;
+    color: #fff;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+}
+.form > .form-row > span {
+    float: left;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+.form > .form-row > a {
+    float: left;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #015cda;
+}
+.form > .form-row > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid + span::after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid + span::after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+  color: #009000;
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="844.0" styleClass="baky" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.CreateAPKPDFController">
+   <children>
+      <JFXTextField fx:id="apkname" alignment="CENTER" labelFloat="true" layoutX="185.0" layoutY="157.0" prefHeight="37.0" prefWidth="455.0" promptText="APK Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="pathlabel" layoutX="21.0" layoutY="121.0" prefHeight="21.0" prefWidth="554.0" style="-fx-background-color: white;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="imgview" fitHeight="114.0" fitWidth="116.0" layoutX="354.0" layoutY="28.0" onMouseClicked="#imgviewact" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="packagename" alignment="CENTER" labelFloat="true" layoutX="185.0" layoutY="204.0" prefHeight="37.0" prefWidth="455.0" promptText="Package Name...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="create" buttonType="RAISED" disable="true" layoutX="370.0" layoutY="495.0" onAction="#createact" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Create">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="browse1" buttonType="RAISED" disable="true" layoutX="708.0" layoutY="258.0" onAction="#browse1act" style="-fx-background-color: #52b788; -fx-background-radius: 3em;" text="Browse..." textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="htmlfile" alignment="CENTER" editable="false" labelFloat="true" layoutX="185.0" layoutY="257.0" prefHeight="37.0" prefWidth="455.0" promptText="Browse To Zip File of pages...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="zipfile" blendMode="DARKEN" editable="false" labelFloat="true" layoutX="25.0" layoutY="311.0" prefHeight="29.0" prefWidth="369.0" promptText="Browse To Resources Zip File..." style="-fx-background-radius: 3em;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXButton fx:id="browse2" buttonType="RAISED" disable="true" layoutX="412.0" layoutY="311.0" onAction="#browse2act" style="-fx-background-color: #4059a9;" text="Browse..." textFill="WHITE" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="htmlfile111" alignment="CENTER" labelFloat="true" layoutX="185.0" layoutY="310.0" prefHeight="37.0" prefWidth="455.0" promptText="Enter the number of pages...">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Hyperlink layoutX="26.0" layoutY="523.0" onAction="#linkkact" text="PDF 2 JPG" textFill="#0059ff" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="278.0" layoutY="551.0" prefHeight="19.0" prefWidth="369.0" style="-fx-background-radius: 3em; -fx-text-fill: red;" text="Note: Convert PDF to JPG not another type ." textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="599.0" onAction="#browseaction" prefHeight="36.0" prefWidth="101.0" style="-fx-background-radius: 3em; -fx-background-color: #52b788; -fx-font-weight: bold;" text="Browse" />
+      <JFXTextField fx:id="outputdir" editable="false" labelFloat="true" layoutX="185.0" layoutY="599.0" prefHeight="36.0" prefWidth="455.0" promptText="Output Directory ..." />
+      <ComboBox fx:id="extension" layoutX="667.0" layoutY="599.0" prefHeight="36.0" prefWidth="162.0" promptText="Choose Pic Ext" />
+      <Label alignment="CENTER" layoutX="361.0" layoutY="667.0" onMouseClicked="#splitpdf" prefHeight="20.0" prefWidth="132.0" style="-fx-background-color: #52b69a; -fx-background-radius: 3em; -fx-font-weight: bold;" text="Split PDF File" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXTextField fx:id="selimg" disable="true" editable="false" labelFloat="true" layoutX="189.0" layoutY="703.0" prefHeight="36.0" prefWidth="476.0" promptText="Selected Image ..." style="-fx-background-radius: 3em;" />
+      <JFXSpinner fx:id="loading" layoutX="532.0" layoutY="496.0" visible="false" />
+      <Separator layoutX="14.0" layoutY="530.0" prefHeight="25.0" prefWidth="816.0" />
+      <RadioButton fx:id="method1" layoutX="185.0" layoutY="377.0" onAction="#method1action" selected="true" style="-fx-font-weight: bold;" text="Method #1" underline="true" />
+      <Label fx:id="preview1" layoutX="721.0" layoutY="378.0" onMouseClicked="#preview1action" style="-fx-font-weight: bold;" text="Preview" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <RadioButton fx:id="method2" layoutX="185.0" layoutY="420.0" onAction="#method2action" style="-fx-font-weight: bold;" text="Method #2" underline="true" />
+      <RadioButton fx:id="method3" layoutX="185.0" layoutY="464.0" onAction="#method3action" style="-fx-font-weight: bold;" text="Build your model" underline="true" visible="false" />
+      <Label fx:id="preview2" layoutX="721.0" layoutY="421.0" onMouseClicked="#preview2action" style="-fx-font-weight: bold;" text="Preview" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Label layoutX="342.0" layoutY="466.0" prefHeight="19.0" prefWidth="412.0" style="-fx-background-radius: 3em; -fx-text-fill: red;" text="Note: Build your design in Eagle editor then choose this option" textFill="RED" underline="true" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXRadioButton fx:id="originallogo" disable="true" layoutX="328.0" layoutY="377.0" selected="true" style="-fx-font-weight: bold; -fx-background-radius: 3em;" text="Original Logo" underline="true" />
+      <JFXRadioButton fx:id="changelogo" disable="true" layoutX="511.0" layoutY="377.0" onAction="#changelogoaction" style="-fx-font-weight: bold; -fx-background-radius: 3em;" text="Change Logo" underline="true" />
+   </children>
+</Pane>

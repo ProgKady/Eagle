@@ -1,0 +1,9 @@
+.codearea {
+    -fx-font-family: 'Ubuntu Mono', monospace;
+    -fx-font-size: 16px;
+    -fx-background-color: #282828;
+    -fx-text-fill: #ebdbb2;
+}
+.keyword { -fx-fill: #fb4934; -fx-font-weight: bold; }
+.string { -fx-fill: #b8bb26; }
+.comment { -fx-fill: #928374; -fx-font-style: italic; }

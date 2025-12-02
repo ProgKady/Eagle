@@ -1,0 +1,116 @@
+/* Dark theme for CodeArea */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;  /* Monospace font for code */
+    -fx-font-size: 16px;  /* Font size */
+    -fx-line-spacing: 1.5;  /* Line spacing */
+    -fx-padding: 10px;  /* Padding around the text */
+    -fx-background-color: #1e1e1e;  /* Dark background */
+    -fx-text-fill: #f5f5f5;  /* Light text color */
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #444;
+}
+
+.codearea:focused {
+    -fx-border-color: #64b5f6;  /* Soft blue border */
+}
+
+/* Syntax Highlighting for Dark Theme */
+.keyword {
+    -fx-fill: #82AAFF;  /* Soft blue for keywords */
+    -fx-font-weight: bold;
+}
+
+.semicolon {
+    -fx-font-weight: bold;
+}
+
+.paren {
+    -fx-fill: #F07178;  /* Rose for parentheses */
+    -fx-font-weight: bold;
+}
+
+.bracket {
+    -fx-fill: #C792EA;  /* Violet for square brackets */
+    -fx-font-weight: bold;
+}
+
+.brace {
+    -fx-fill: #89DDFF;  /* Teal for curly braces */
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #C3E88D;  /* Green for strings */
+}
+
+.comment {
+    -fx-fill: #7f848e;  /* Muted gray for comments */
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #F78C6C;  /* Orange for numbers */
+}
+
+.function {
+    -fx-fill: #82AAFF;  /* Light blue for function names */
+    -fx-font-weight: bold;
+}
+
+.constant {
+    -fx-fill: #FF5370;  /* Reddish for constants */
+}
+
+.operator {
+    -fx-fill: #FFCB6B;  /* Yellow for operators */
+}
+
+.variable {
+    -fx-fill: #D0AFFF;  /* Purple for variables */
+}
+
+.line-number {
+    -fx-fill: #6a737d;
+    -fx-padding-right: 10px;
+}
+
+.cursor-line {
+    -fx-background-color: #2a2a2a;  /* Slightly lighter for current line */
+}
+
+.error {
+    -fx-fill: #FF5370;
+    -fx-background-color: #FF537033;
+    -fx-font-weight: bold;
+    -fx-padding: 2px;
+    -fx-border-radius: 4px;
+}
+
+.paragraph-box:has-caret {
+    -fx-background-color: #2f3a48;
+}
+
+/* Scrollbar Styling */
+.codearea::-webkit-scrollbar {
+    -fx-width: 10px;
+}
+
+.codearea::-webkit-scrollbar-thumb {
+    -fx-background-color: #555;
+    -fx-border-radius: 5px;
+}
+
+.codearea::-webkit-scrollbar-track {
+    -fx-background: #2e2e2e;
+    -fx-border-radius: 5px;
+}
+
+.codearea::-webkit-scrollbar-thumb:hover {
+    -fx-background-color: #777;
+}
+
+.codearea::selection {
+    -fx-background-color: #264F78;
+    -fx-text-fill: white;
+}

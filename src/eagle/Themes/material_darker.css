@@ -1,0 +1,44 @@
+
+/* Theme: Material Darker */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #212121;
+    -fx-text-fill: #eeeeee;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #373737;
+}
+
+.codearea:focused {
+    -fx-border-color: #82aaff;
+}
+
+.keyword {
+    -fx-fill: #c792ea;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #c3e88d;
+}
+
+.comment {
+    -fx-fill: #545454;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #f78c6c;
+}
+
+.function {
+    -fx-fill: #c792ea;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #89ddff;
+}

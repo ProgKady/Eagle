@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0" minWidth="0" prefHeight="917.0" prefWidth="1274.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sandsoft.acefx.AceEditor">          
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <children>
+
+        <!-- Top Toolbar -->
+        <ToolBar maxHeight="Infinity" maxWidth="Infinity" prefHeight="40.0" prefWidth="1274.0" stylesheets="@nord-dark.css" GridPane.hgrow="ALWAYS" GridPane.vgrow="NEVER">
+            <items>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#openButtonOnAction" style="-fx-background-color: grey;" styleClass="open-button" text="Open">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#saveButtonOnAction" style="-fx-background-color: grey;" styleClass="save-button" text="Save">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton buttonType="RAISED" disable="true" mnemonicParsing="false" onAction="#reloadButtonOnAction" style="-fx-background-color: grey;" styleClass="reload-button" text="Reload">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton fx:id="undoButton" buttonType="RAISED" mnemonicParsing="false" onAction="#undoButtonOnAction" style="-fx-background-color: grey;" styleClass="undo-button" text="Undo">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+                <JFXButton fx:id="redoButton" buttonType="RAISED" mnemonicParsing="false" onAction="#redoButtonOnAction" style="-fx-background-color: grey;" styleClass="redo-button" text="Redo">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#cutButtonOnAction" style="-fx-background-color: grey;" styleClass="cut-button" text="Cut">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#copyButtonOnAction" style="-fx-background-color: grey;" styleClass="copy-button" text="Copy">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#pasteButtonOnAction" style="-fx-background-color: grey;" styleClass="paste-button" text="Paste">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#findButtonOnAction" style="-fx-background-color: grey;" styleClass="find-button" text="Find">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#replaceButtonOnAction" style="-fx-background-color: grey;" styleClass="replace-button" text="Replace">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#optionsButtonOnAction" style="-fx-background-color: grey;" styleClass="options-button" text="Options">
+                    <effect><DropShadow /></effect>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton buttonType="RAISED" onAction="#sample" style="-fx-background-color: #52b788;" text="Samples" textFill="WHITE">
+                    <font><Font name="System Bold" size="13.0" /></font>
+                    <effect><DropShadow /></effect>
+                    <cursor><Cursor fx:constant="HAND" /></cursor>
+                </JFXButton>
+
+                <Separator orientation="VERTICAL" />
+
+                <JFXButton fx:id="reed" buttonType="RAISED" onAction="#reedaction" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #03045e; -fx-text-fill: white;" text="Read" visible="false">
+                    <font><Font name="System Bold" size="13.0" /></font>
+                    <effect><DropShadow /></effect>
+                    <cursor><Cursor fx:constant="HAND" /></cursor>
+                </JFXButton>
+            </items>
+        </ToolBar>
+
+        <!-- Settings Toolbar (Hidden) -->
+        <ToolBar prefHeight="40.0" prefWidth="1140.0" stylesheets="@../../../eagle/cupertino-light.css" visible="false" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="NEVER">
+            <items>
+                <Label text="Language:" textFill="WHITE" visible="false">
+                    <font><Font name="System Bold" size="13.0" /></font>
+                </Label>
+                <Separator orientation="VERTICAL" />
+                <ComboBox fx:id="modeListBox" prefHeight="32.0" prefWidth="215.0" styleClass="mode-list" visible="false">
+                    <effect><DropShadow /></effect>
+                </ComboBox>
+                <Separator orientation="VERTICAL" />
+                <Label text="Theme:" textFill="WHITE" visible="false">
+                    <font><Font name="System Bold" size="13.0" /></font>
+                </Label>
+                <Separator orientation="VERTICAL" />
+                <JFXComboBox fx:id="themeListBox" labelFloat="true" prefHeight="32.0" prefWidth="193.0" styleClass="theme-list" visible="false">
+                    <effect><DropShadow /></effect>
+                </JFXComboBox>
+            </items>
+        </ToolBar>
+
+        <!-- WebView inside ScrollPane -->
+        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" pannable="true" stylesheets="@nord-dark.css" vbarPolicy="ALWAYS" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+            <content>
+                <WebView fx:id="webView" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+            </content>
+        </ScrollPane>
+
+        <!-- TextArea below toolbars if needed -->
+        <JFXTextArea fx:id="area" style="-fx-background-color: wheat;" visible="false" wrapText="true" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="NEVER" />
+        
+    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+      <URL value="@cupertino-light.css" />
+   </stylesheets>
+</GridPane>

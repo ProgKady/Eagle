@@ -1,0 +1,44 @@
+
+/* Theme: Tomorrow Night */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #1d1f21;
+    -fx-text-fill: #c5c8c6;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #282a2e;
+}
+
+.codearea:focused {
+    -fx-border-color: #cc6666;
+}
+
+.keyword {
+    -fx-fill: #b294bb;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #b5bd68;
+}
+
+.comment {
+    -fx-fill: #969896;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #de935f;
+}
+
+.function {
+    -fx-fill: #b294bb;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #81a2be;
+}

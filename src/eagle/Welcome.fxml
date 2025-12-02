@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="898.0" prefWidth="1315.0" style="-fx-border-color: black; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.WelcomeController">
+   <children>
+      <ImageView fx:id="imgy" fitHeight="700.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@3.jpg" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="-1.0" prefHeight="898.0" prefWidth="1315.0">
+         <children>
+            <Pane fx:id="panio" onMouseClicked="#paniomc" prefHeight="649.0" prefWidth="1100.0">
+               <children>
+                  <HBox fx:id="dock" alignment="CENTER" layoutX="356.0" layoutY="784.0" onMouseEntered="#enterdock" onMouseExited="#exitdock" opacity="0.3" prefHeight="100.0" prefWidth="818.0" style="-fx-spacing: 40px;" visible="false">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="web1" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" onMouseClicked="#web1act" prefHeight="45.0" prefWidth="50.0" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="web" />
+                              <String fx:value="gethtml" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="web11" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="10.0" layoutY="17.0" onMouseClicked="#web11act" prefHeight="57.0" prefWidth="50.0" styleClass="wweebb" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web111111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="290.0" layoutY="28.0" onMouseClicked="#web111111act" prefHeight="45.0" prefWidth="50.0" styleClass="qrcode" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web1111111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="360.0" layoutY="28.0" onMouseClicked="#web1111111act" prefHeight="45.0" prefWidth="50.0" styleClass="htmltut" stylesheets="@CSS.css" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web11111111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="430.0" layoutY="28.0" onMouseClicked="#web11111111act" prefHeight="45.0" prefWidth="50.0" styleClass="csstut" stylesheets="@CSS.css" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web111111111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="500.0" layoutY="28.0" onMouseClicked="#web111111111act" prefHeight="45.0" prefWidth="50.0" styleClass="jstut" stylesheets="@CSS.css" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web1111111111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="570.0" layoutY="28.0" onMouseClicked="#web1111111111act" prefHeight="45.0" prefWidth="50.0" styleClass="atut" stylesheets="@CSS.css" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web111111111111" alignment="CENTER" contentDisplay="CENTER" disable="true" graphicTextGap="0.0" layoutX="710.0" layoutY="28.0" onMouseClicked="#web111111111111act" prefHeight="45.0" prefWidth="50.0" styleClass="rere" stylesheets="@CSS.css" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="cv" alignment="CENTER" contentDisplay="CENTER" disable="true" graphicTextGap="0.0" layoutX="850.0" layoutY="28.0" onMouseClicked="#cvact" prefHeight="45.0" prefWidth="50.0" styleClass="resume" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="60.0" layoutY="17.0" onMouseClicked="#web111act" prefHeight="45.0" prefWidth="50.0" styleClass="simba" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web1111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="9.0" layoutX="110.0" layoutY="17.0" onMouseClicked="#web1111act" prefHeight="45.0" prefWidth="50.0" styleClass="wysiwyg" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web11111" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="160.0" layoutY="17.0" onMouseClicked="#web11111act" prefHeight="45.0" prefWidth="50.0" styleClass="jar" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="min" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="1005.0" layoutY="13.0" onMouseClicked="#minact" prefHeight="10.0" prefWidth="6.0" styleClass="mini" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="htmlproo11" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="26.0" layoutY="87.0" onMouseClicked="#htmlproact11" prefHeight="223.0" prefWidth="50.0" styleClass="zomburn" stylesheets="@CSS.css" textAlignment="CENTER" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="133.0" layoutY="12.0" onMouseClicked="#fbact" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@facebook.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git" fitHeight="40.0" fitWidth="35.0" layoutX="198.0" layoutY="14.0" onMouseClicked="#gitact" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@github.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="gm" fitHeight="40.0" fitWidth="35.0" layoutX="76.0" layoutY="14.0" onMouseClicked="#gmact" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@google.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="app" fitHeight="150.0" fitWidth="40.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#appact" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@dribbble.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <WebView fx:id="buycoffee" layoutX="944.0" layoutY="261.0" prefHeight="100.0" prefWidth="100.0" visible="false" />
+                  <ImageView fx:id="git3" fitHeight="40.0" fitWidth="35.0" layoutX="389.0" layoutY="14.0" onMouseClicked="#git3act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@whatsapp.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git2" fitHeight="40.0" fitWidth="35.0" layoutX="328.0" layoutY="11.0" onMouseClicked="#git2act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@instagram.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git1" fitHeight="40.0" fitWidth="35.0" layoutX="266.0" layoutY="14.0" onMouseClicked="#git1act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@telegram.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git4" fitHeight="40.0" fitWidth="35.0" layoutX="448.0" layoutY="13.0" onMouseClicked="#git4act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@linkedin_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git6" fitHeight="40.0" fitWidth="35.0" layoutX="550.0" layoutY="14.0" onMouseClicked="#git6act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@17183745891582607851-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git5" fitHeight="40.0" fitWidth="35.0" layoutX="499.0" layoutY="11.0" onMouseClicked="#git5act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@29509375616315917024153-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git7" fitHeight="40.0" fitWidth="35.0" layoutX="614.0" layoutY="11.0" onMouseClicked="#git7act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@3468042151558096241-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git8" fitHeight="40.0" fitWidth="35.0" layoutX="666.0" layoutY="12.0" onMouseClicked="#git8act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@5649900431558096238-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git9" fitHeight="40.0" fitWidth="35.0" layoutX="727.0" layoutY="11.0" onMouseClicked="#git9act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@85054744116315917044153-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="git10" fitHeight="40.0" fitWidth="35.0" layoutX="784.0" layoutY="13.0" onMouseClicked="#git10act" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@188928837916315917104153-128_35x35.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="web11111111111" alignment="CENTER" contentDisplay="CENTER" disable="true" graphicTextGap="0.0" layoutX="969.0" layoutY="117.0" onMouseClicked="#web11111111111act" prefHeight="45.0" prefWidth="50.0" styleClass="exe" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow spread="0.5" />
+                     </effect>
+                  </Label>
+                  <ImageView fx:id="kadysofticon" disable="true" fitHeight="109.0" fitWidth="200.0" layoutX="14.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@gtyjhg.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="43.24" radius="17.785" spread="0.83" width="29.9" />
+                     </effect>
+                  </ImageView>
+                  <HBox alignment="CENTER" layoutX="486.0" layoutY="184.0" prefHeight="126.0" prefWidth="743.0" spacing="150.0" visible="false" />
+                  <HBox alignment="CENTER" layoutX="464.0" layoutY="429.0" prefHeight="126.0" prefWidth="811.0" spacing="100.0" visible="false" />
+                  <Label fx:id="web111111111112" alignment="CENTER" contentDisplay="CENTER" disable="true" graphicTextGap="0.0" layoutX="1024.0" layoutY="573.0" onMouseClicked="#web111111111112act" prefHeight="45.0" prefWidth="50.0" styleClass="cppp" stylesheets="@CSS.css" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow spread="0.5" />
+                     </effect>
+                  </Label>
+                  <Pane prefHeight="898.0" prefWidth="402.0" style="-fx-background-color: #e9ecef;">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="-2.0" layoutY="14.0" prefHeight="40.0" prefWidth="402.0" spacing="70.0">
+                           <children>
+                              <ImageView fx:id="git11" fitHeight="25.0" fitWidth="35.0" focusTraversable="true" onMouseClicked="#git11act" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@egypt_35x35.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                              <ComboBox fx:id="set" onHidden="#setact" prefHeight="36.0" prefWidth="203.0" promptText="Adds On" style="-fx-background-radius: 5em; -fx-font-weight: bold; -fx-background-color: white; -fx-border-width: 3;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone />
+                                 </effect>
+                              </ComboBox>
+                              <ImageView fx:id="cls" fitHeight="25.0" fitWidth="33.0" onMouseClicked="#clsact" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@run.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label layoutX="171.0" layoutY="73.0" style="-fx-font-weight: bold;" text="Web" underline="true" />
+                        <Label layoutX="160.0" layoutY="239.0" style="-fx-font-weight: bold;" text="Android" underline="true" />
+                        <Label layoutX="159.0" layoutY="550.0" style="-fx-font-weight: bold;" text="Desktop" underline="true" />
+                        <Separator layoutX="32.0" layoutY="93.0" prefHeight="25.0" prefWidth="310.0" />
+                        <Separator layoutX="32.0" layoutY="259.0" prefHeight="25.0" prefWidth="310.0" />
+                        <Separator layoutX="32.0" layoutY="570.0" prefHeight="25.0" prefWidth="310.0" />
+                        <Label fx:id="htmlpro" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" layoutX="31.0" layoutY="118.0" onMouseClicked="#htmlproact" opacity="0.8" prefHeight="109.0" prefWidth="120.0" styleClass="html" stylesheets="@CSS.css" text="Web Project" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="desktop" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" layoutX="44.0" layoutY="609.0" onMouseClicked="#desktopact" opacity="0.8" prefHeight="100.0" prefWidth="120.0" styleClass="desktop" stylesheets="@CSS.css" text="HTML Desktop">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="jsapk" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" layoutX="17.0" layoutY="284.0" onMouseClicked="#jsapkact" opacity="0.8" prefHeight="109.0" prefWidth="87.0" styleClass="jsapk" stylesheets="@CSS.css" text="Js APK" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="htmlapk1111" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" layoutX="132.0" layoutY="285.0" onMouseClicked="#htmlapkact1111" opacity="0.8" prefHeight="86.0" prefWidth="135.0" styleClass="pdf" stylesheets="@CSS.css" text="PDF To APK">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="jspro" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="223.0" layoutY="118.0" onMouseClicked="#jsproact" opacity="0.8" prefHeight="109.0" prefWidth="135.0" styleClass="js" stylesheets="@CSS.css" text="Js Project" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="htmlapk" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="280.0" layoutY="276.0" onMouseClicked="#htmlapkact" opacity="0.8" prefHeight="126.0" prefWidth="108.0" styleClass="htmlapk" stylesheets="@CSS.css" text="HTML APK">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="htmlapk1" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="53.0" layoutY="426.0" onMouseClicked="#htmlapkact1" opacity="0.8" prefHeight="109.0" prefWidth="120.0" styleClass="cordova" stylesheets="@CSS.css" text="Eagle Builder">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="mapk" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="200.0" layoutY="426.0" onMouseClicked="#mapkact" opacity="0.8" prefHeight="109.0" prefWidth="135.0" styleClass="music" stylesheets="@CSS.css" text="Music APK">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label fx:id="web" alignment="CENTER" contentDisplay="TOP" disable="true" graphicTextGap="5.0" layoutX="188.0" layoutY="608.0" onMouseClicked="#webact" opacity="0.8" prefHeight="109.0" prefWidth="160.0" styleClass="web" stylesheets="@CSS.css" text="Link To Desktop">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Separator layoutX="5.0" layoutY="727.0" prefHeight="25.0" prefWidth="391.0" />
+                        <ImageView fitHeight="90.0" fitWidth="135.0" layoutX="139.0" layoutY="817.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gtyjhg.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="762.0" style="-fx-font-size: 15;" text="All Powered By" underline="true" />
+                        <Label layoutX="152.0" layoutY="805.0" style="-fx-font-size: 20; -fx-font-family: Broadway; -fx-text-fill: linear-gradient(from 0% 0% to 100% 0%, #FF7E5F, #FEB47B);" text="Kadysoft" underline="true" />
+                        <Label layoutX="94.0" layoutY="852.0" style="-fx-font-size: 15;" text="All Rights Reserved 2017 - 2025" underline="true" />
+                     </children></Pane>
+                  <JFXButton fx:id="launch" buttonType="RAISED" layoutX="834.0" layoutY="715.0" onAction="#launchaction" style="-fx-background-radius: 3em; -fx-font-weight: bold; -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #FF7E5F, #FEB47B);" text="Launch" visible="false" />
+                  <WebView fx:id="hint" layoutX="454.0" layoutY="36.0" prefHeight="617.0" prefWidth="811.0" visible="false" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@CSS.css" />
+      <URL value="@cupertino-light.css" />
+   </stylesheets>
+</Pane>

@@ -1,0 +1,44 @@
+
+/* Theme: Solarized Dark */
+.codearea {
+    -fx-font-family: 'Courier New', monospace;
+    -fx-font-size: 16px;
+    -fx-line-spacing: 1.5;
+    -fx-padding: 10px;
+    -fx-background-color: #002b36;
+    -fx-text-fill: #839496;
+    -fx-wrap-text: true;
+    -fx-border-radius: 8px;
+    -fx-border-color: #073642;
+}
+
+.codearea:focused {
+    -fx-border-color: #268bd2;
+}
+
+.keyword {
+    -fx-fill: #2aa198;
+    -fx-font-weight: bold;
+}
+
+.string {
+    -fx-fill: #859900;
+}
+
+.comment {
+    -fx-fill: #586e75;
+    -fx-font-style: italic;
+}
+
+.number {
+    -fx-fill: #b58900;
+}
+
+.function {
+    -fx-fill: #2aa198;
+    -fx-font-weight: bold;
+}
+
+.variable {
+    -fx-fill: #cb4b16;
+}

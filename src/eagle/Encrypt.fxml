@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eagle.EncryptController">
+   <children>
+      <Label layoutX="233.0" layoutY="24.0" text="Encryption Tool" textFill="GREEN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="25.45" radius="11.855" spread="0.76" width="23.97" />
+         </effect>
+      </Label>
+      <JFXButton fx:id="browsefile" buttonType="RAISED" layoutX="484.0" layoutY="140.0" onAction="#browsefileaction" style="-fx-background-color: #4059a9;" text="Browse" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="file" editable="false" labelFloat="true" layoutX="46.0" layoutY="126.0" prefHeight="29.0" prefWidth="416.0" promptText="Browse To File ...">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="des" editable="false" labelFloat="true" layoutX="46.0" layoutY="209.0" prefHeight="29.0" prefWidth="416.0" promptText="Browse To Destination ...">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="en" buttonType="RAISED" layoutX="265.0" layoutY="299.0" onAction="#enaction" style="-fx-background-color: green;" text="Encrypt" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="browsedes" buttonType="RAISED" layoutX="484.0" layoutY="223.0" onAction="#browsedesaction" style="-fx-background-color: #4059a9;" text="Browse" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

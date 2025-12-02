@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\20155\Desktop\hrrrr\Employee_Payroll_System.jar</jar>
+  <outfile>C:\Users\20155\Desktop\hrrrr\HR Manager.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\20155\Desktop\hrrrr\tandc.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.0</minVersion>
+    <maxVersion>8.0</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.1.1.1</fileVersion>
+    <txtFileVersion>1.1.1.1</txtFileVersion>
+    <fileDescription>HR Manager By Kadysoft</fileDescription>
+    <copyright>All Rights Reserved @ Kadysoft Ltd, 2017 - 2023</copyright>
+    <productVersion>1.1.1.1</productVersion>
+    <txtProductVersion>1.1.1.1</txtProductVersion>
+    <productName>HR Manager</productName>
+    <companyName>Kadysoft Ltd.</companyName>
+    <internalName>HR Manager</internalName>
+    <originalFilename>HR Manager.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

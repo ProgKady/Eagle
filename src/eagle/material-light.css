@@ -1,0 +1,9 @@
+.codearea {
+    -fx-font-family: 'Roboto Mono', monospace;
+    -fx-font-size: 16px;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #37474f;
+}
+.keyword { -fx-fill: #2962ff; -fx-font-weight: bold; }
+.string { -fx-fill: #00c853; }
+.comment { -fx-fill: #90a4ae; -fx-font-style: italic; }
